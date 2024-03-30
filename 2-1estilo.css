@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(194, 255, 147);
+}
+h1{
+    font-family: sans-serif;
+    color:rgb(53, 181, 255);
+}
+p{
+    border-radius: 50%;
+}
+.banner{
+    background-color: grey;
+    display: flex;
+}
+#seccion1{
+    font-size: 20em;
+    font-family: 'Courier New', Courier, monospace;
+}
+form button{
+    padding: 10px;
+}
+button:hover{
+    background-color: cyan;
+}
+ 

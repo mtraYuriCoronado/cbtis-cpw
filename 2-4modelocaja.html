@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caja CSS</title>
+    <style>
+        html{
+            font-family: sans-serif;
+        }
+        div {
+            background-color: bisque;
+            padding: 20px;
+            margin: 50px;
+            border: 3px solid darksalmon; /*tamaño, estilo, color*/
+            width: 300px;
+            height: 300px;
+        }
+        .inline{
+            display: inline;
+            background-color: yellow;
+        }
+        .block{
+            display: block;
+            background-color: violet;
+            border: 3px solid darkmagenta;
+        }
+
+        .parent{
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            background-color: beige;
+            border:10px solid gold;
+            margin: 3em;
+        }
+        .child{
+            background-color: mediumslateblue;
+            text-align: center;
+            color: white;
+            opacity: .7;
+            width: 200px;
+            height: 80px;
+            border: 10px solid mediumblue;
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: aliceblue;
+            border: 5px solid blue;
+            margin: 3em;
+            overflow: hidden;
+            /* overflow: scroll; */
+            /* overflow: visible; */
+        }
+        .text{
+            font-size: 5em;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="inline">Titulo como caja en linea</h1> <a href="#">Enlace</a>
+    <p>Parrafo</p>
+    <h2>Titulo como caja en bloque</h2>
+    <div>
+        Este es el contenido de la caja
+    </div>
+    <label for="">Label: </label><input type="text">
+    <span class="block">Span como caja en bloque</span>
+    <button>Boton</button>
+
+    <section class="parent">
+        <p>Contenedor padre</p>
+        <article class="child">
+            <p>Contenedor hijo</p>
+        </article>
+    </section>
+
+    <section class="box">
+        <p class="text">css is awsome</p>
+    </section>
+
+</body>
+</html>

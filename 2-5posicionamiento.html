@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento de elementos</title>
+    <style>
+        .caja{
+            padding: 1rem;
+            margin: .5rem;
+            width: 1.5rem;
+        }
+        .caja1{
+            background-color: aquamarine;
+            border: 2px solid darkturquoise;
+        }
+        .caja2{
+            background-color: thistle;
+            border: 2px solid darkmagenta;
+        }
+        .caja3{
+            background-color: lightpink;
+            border: 2px solid hotpink;
+        }
+        .static{
+            position: static;
+        }
+        .relative{
+            position: relative;
+            top: 40px;
+            left: 40px;
+        }
+        .absolute{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        .fixed{
+            position: fixed;
+            top: 50px;
+            left: 200px;
+        }
+        .sticky{
+            position: sticky;
+            top: 50px;
+            left: 200px;
+        }
+        .float{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posicionamiento CSS</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ipsum perspiciatis, corporis, libero repudiandae, facere illum cupiditate similique nulla commodi minus voluptates voluptatum sequi tempora numquam quia nihil architecto. Nemo.0</p>
+    <h4>Posicion fija</h4>
+    <div>
+        <div class="caja caja1">1</div>
+        <div class="caja caja2 fixed">2</div>
+        <div class="caja caja3">3</div>
+    </div>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi laborum totam, molestiae numquam iusto aspernatur nobis dolores quae. Sit nostrum, saepe repudiandae rem odit qui ut obcaecati ad eos atque?
+        Qui harum assumenda quisquam excepturi accusamus? Asperiores culpa expedita, sapiente, debitis veniam possimus quas porro quis autem ad aut, quia vero ab. Ducimus inventore nesciunt ipsum voluptatem harum. Veniam, voluptatem.
+    </p>
+    <hr>
+    
+    <h4>Posicion absoluta</h4>
+    <div>
+        <div class="caja caja1 absolute">4</div>
+        <div class="caja caja2">5</div>
+        <div class="caja caja3">6</div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aut dolore ea sapiente quidem unde a voluptas, molestias provident error deleniti magni nobis laboriosam quas quod? Vitae distinctio magnam molestias!
+        Explicabo labore quia maiores a maxime perferendis culpa, molestiae sunt in, veritatis ea alias nam aperiam saepe aut tenetur? Quam aliquid ratione doloribus error molestias nostrum dolores, quas asperiores alias.
+    </p>
+    <hr>
+    <h4>Posicion sticky</h4>
+    <div>
+        <div class="caja caja1">10</div>
+        <div class="caja caja2 sticky">11</div>
+        <div class="caja caja3">12</div>
+    </div>
+    <p>
+        Quo nihil quis voluptas culpa nostrum, pariatur ratione dignissimos beatae, nesciunt similique dolores dolore porro, qui sint tempora? Deserunt cupiditate ducimus deleniti quam reprehenderit perspiciatis, quidem optio nesciunt nobis veniam.
+        Maiores magni assumenda, laborum odit totam velit quas cumque facilis, veniam cupiditate vitae nemo voluptas pariatur nobis obcaecati eius dolores eligendi temporibus autem nesciunt nam dicta? Hic eaque rem praesentium.
+    </p>
+    <hr>
+    <h4>Posicion relativa</h4>
+    <div>
+        <div class="caja caja1">7</div>
+        <div class="caja caja2 relative">8</div>
+        <div class="caja caja3">9</div>
+    </div>
+    <p>
+        Quo nihil quis voluptas culpa nostrum, pariatur ratione dignissimos beatae, nesciunt similique dolores dolore porro, qui sint tempora? Deserunt cupiditate ducimus deleniti quam reprehenderit perspiciatis, quidem optio nesciunt nobis veniam.
+        Maiores magni assumenda, laborum odit totam velit quas cumque facilis, veniam cupiditate vitae nemo voluptas pariatur nobis obcaecati eius dolores eligendi temporibus autem nesciunt nam dicta? Hic eaque rem praesentium.
+    </p>
+</body>
+</html>

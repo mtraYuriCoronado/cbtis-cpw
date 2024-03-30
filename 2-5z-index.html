@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index en CSS</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        body>h1{
+            color: steelblue;
+            text-align: center;
+        }
+        div>h1{
+            font-size: medium;
+            font-family: 'Arial Narrow';
+        }
+        div{
+            box-sizing: border-box;
+            border: 1px dashed #ccc;
+            opacity: 0.7;
+            padding: 10px;
+        }
+        .container{
+            background-color: #eee;
+            border: 1px solid #ccc;
+            width: 700px;
+            height: 600px;
+            margin: 1em auto;
+            position: relative;
+        }
+        .uno, .dos, .cuatro, .cinco{
+            position: relative;            
+        }
+        .tres, .seis{
+            position: absolute;
+        }
+        .uno{
+            background-color: rgb(255, 252, 204);
+            border-color: yellow;
+            margin-top: 10px;
+            z-index: 5;
+        }
+        .dos{
+            background-color: rgb(183, 255, 183);
+            border-color: #00ff00;
+            margin-top: 300px;
+            z-index: 2;
+        }
+        .tres{
+            background-color: #f7a7a7;
+            border-color: red;
+            width: 400px;
+            padding-top: 50px;
+            top: 40px;
+            left: 250px;
+            z-index: 4;
+        }
+        .cuatro{
+            background-color: #cfc;
+            border-color: #00e1ff;
+            margin-bottom: 20px;
+            z-index: 6;
+        }
+        .cinco{
+            background-color: #ffd581;
+            border-color: #ffa800;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            z-index: 1;
+        }
+        .seis{
+            background-color: #8484ff;
+            border-color: blue;
+            width: 200px;
+            height: 400px;
+            padding-top: 125px;
+            padding-bottom: 125px;
+            text-align: center;
+            top: 30px;
+            left: 180px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Práctica Z-index</h1>
+    <section class="container">
+        <div class="uno">
+            <h1>Division Element #1</h1>
+            <code>
+                margin-top:10px; <br>
+                position: relative; <br>
+                z-index: 5; <br>
+            </code>
+        </div>
+        <div class="dos">
+            <h1>Division Element #2</h1>
+            <code>
+                margin-top: 300px; <br>
+                position: relative; <br>
+                z-index: 2; <br>
+            </code>
+        </div>
+        <div class="tres">
+            <div class="cuatro">
+                <h1>Division Element #4</h1>
+                <code>
+                    position: relative; <br>
+                    margin-bottom: 30px; <br>
+                    z-index: 6;
+                </code>
+            </div>
+            
+            <h1>Division Element #3</h1>
+            <code>
+                position: absolute; <br>
+                width: 400px; <br>
+                padding-top: 50px; <br>
+                top: 40px; <br>
+                left: 250px; <br>
+                z-index: 4; <br>
+            </code>
+
+            <div class="cinco">
+                <h1>Division Element #5</h1>
+                <code>
+                    position: relative; <br>
+                    margin-top: 20px; <br>
+                    margin-bottom: 20px; <br>
+                    z-index: 1;
+                </code>
+            </div>
+            <div class="seis">
+                <h1>Dvision Element #6</h1>
+                <code>
+                    position: absolute; <br>
+                    width: 200px; <br>
+                    height: 400px; <br>
+                    padding-top: 125px; <br>
+                    padding-bottom: 125px; <br>
+                    top: 30px; <br>
+                    left: 180px; <br>
+                    z-index: 3;
+                </code>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

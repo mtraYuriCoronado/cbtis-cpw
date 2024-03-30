@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-family: sans-serif;
+            box-sizing: content-box; /*Valor por defecto*/
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #333;
+            color: #eee;
+        }
+        img{
+            display: none;
+        }
+        
+        @media (min-width: 360px){
+            body{
+                background-color: #eee;
+                color: #333;
+            }
+            img{
+                display: initial;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diseño web responsivo</h1>
+        <em>Responsive Web Design</em>
+    </header>
+    <main>
+        <p>
+            El diseño web responsivo se trata de una metodología de trabajo en el cual un sitio web o aplicación es maquetada para adaptarse a distintos dispositivos.
+        </p>
+        <h3>Elementos del diseño responsivo</h3>
+        <ul>
+            <li>Etiqueta meta viewport</li>
+            <li>Media queries</li>
+        </ul>
+    </main>
+    <section>
+        <h2>Etiqueta meta viewport</h2>
+        <article>
+            <img src="meta viewport.png" alt="">
+        </article>
+    </section>
+</body>
+</html>

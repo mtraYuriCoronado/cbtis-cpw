@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Selectores y Propiedades</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        h1{
+            color: blue;
+        }
+        h2{
+            color: white;
+            background-color: #0099ff;
+        }
+        strong, em{
+            font-size: 200%;
+        }
+        #especial{
+            background-color: yellow;
+        }
+        .alerta{
+            border: 3px solid green;
+            padding: 2px;
+        }
+        .alerta.alto{
+            background-color: tomato;
+        }
+        .alerta.cd{
+            background-color:skyblue;
+        }
+        a{
+            color: orange;
+        }
+        a:visited{
+            color: magenta;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        nav a:first-child{
+            font-size: 150%;
+        }
+        p::first-line{
+            color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Benito Juárez</h1>
+        <nav>
+            <a href="#bio">Biografía</a>
+            <a href="#obra">Obra</a>
+            <a href="#obra">Contribuciones</a>
+            <a href="#obra">Fallecimiento</a>
+        </nav>
+        <h2 id="bio">Biografía</h2>
+        <p>
+            Benito Juárez fue un destacado <strong>estadista mexicano</strong> y <srong>reformador liberal</srong> que se desempeñó como presidente de México durante cinco mandatos en el siglo XIX. Nació el <em>21 de marzo de 1806</em> en <span class="alerta cd">San Pablo Guelatao</span>, Oaxaca, México, y falleció el <em>18 de julio de 1872</em> en la Ciudad de México.
+        </p>
+        <a href="#">Conocer más</a>
+        <h2 id="obra">Obra</h2>
+        <p>
+            Juárez es mejor conocido por sus esfuerzos para <span class="alerta alto">modernizar</span> México y establecer una sociedad más democrática e igualitaria. Implementó numerosas <span class="alerta">reformas</span> destinadas a reducir el poder de la <span id="especial">Iglesia Católica</span>, secularizar las <span class="alto">instituciones</span> y promover la educación. Uno de sus logros más significativos fue la promulgación de las <span class="cd">"Leyes de Reforma"</span> en la década de 1850, que tenían como objetivo limitar el poder e influencia de la Iglesia Católica en la política y la sociedad mexicanas.
+        </p>
+      
+        <a href="#">Conocer más</a>
+
+        <section>
+            <h2>Atribuciones</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Área de Contribución</th>
+                        <th>Aportaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Reformas liberales</td>
+                        <td>Ley Juárez, Leyes de Reforma (separación Iglesia-Estado, secularización de bienes eclesiásticos).</td>
+                    </tr>
+                    <tr>
+                        <td>Estado de derecho</td>
+                        <td>Fortalecimiento del estado de derecho, igualdad ante la ley, independencia judicial.</td>
+                    </tr>
+                    <tr>
+                        <td>Modernización del país</td>
+                        <td>Construcción de infraestructura (ferrocarriles, telegrafía) para integrar regiones y desarrollo económico.</td>
+                    </tr>
+                    <tr>
+                        <td>Educación</td>
+                        <td>Expansión del acceso a la educación pública, promoción de la educación laica y gratuita.</td>
+                    </tr>
+                    <tr>
+                        <td>Resistencia a la intervención extrangera</td>
+                        <td>Liderazgo en la resistencia contra la Segunda Intervención Francesa, defensa de la soberanía nacional.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+      </div>
+</body>
+</html>

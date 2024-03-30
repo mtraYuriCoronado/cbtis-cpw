@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores HTML</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        p {
+            /* Estilos para todos los párrafos */
+            background-color: blueviolet;
+        }
+        form{
+            padding: 20px 10px;
+            margin: 10px;
+            background-color: antiquewhite;
+        }
+        li{
+            /*disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-greek, lower-latin, upper-latin, armenian, georgian, lower-alpha, upper-alpha, none*/
+            list-style-type: decimal-leading-zero; 
+        }
+        .solid{
+            /*underline overline line-through blink*/
+            text-decoration: line-through yellowgreen;
+            color: gold;
+            font-weight: bolder;
+        }
+        .mi-clase {
+            /* Estilos para elementos con la clase "mi-clase" */
+            background-color: aqua;
+            color: blue;
+        }
+        .especial{
+            color: lime;
+            font-weight: bold;
+        }
+        #mi-id {
+            /* Estilos para el elemento con el ID "mi-id" */
+            background-color: tomato;
+        }
+        form div{
+            padding: 5px 0;
+        }
+        div p {
+            /* Estilos para todos los párrafos dentro de un div */
+            color: white;
+        }
+        input[type="text"] {
+            /* Estilos para todos los input de tipo texto */
+            border: solid 2px red;
+            background-color: plum;
+        }
+        input[type="submit"]:hover{
+            background-color: yellow;
+        }
+        a:hover {
+            /*Estilos para los enlaces con el estado hover*/
+            color: rgb(226, 33, 200);
+            text-decoration: none;
+        }
+        h2,
+        .mi-clase,
+        img{
+            border: 5px solid brown;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="mi-id">Primer titulo grande</h1>
+    <h2>Subtítulo</h2>
+    
+    <a href="1-1estructurabasica.html">Enlace 1</a>
+    <a href="1-2etiquetasfundamentales.html">Enlace 2</a>
+    <a href="1-3multimedia.html">Enlace 3</a>
+
+    <p>
+        Primer párrafo <br>
+        Lorem ipsum dolor sit, amet <em class="solid">texto importante</em> consectetur adipisicing elit. Excepturi molestiae ut laborum sunt, hic repellat laboriosam recusandae vitae repudiandae harum aliquid asperiores animi impedit placeat quae omnis earum libero suscipit!
+    </p>
+    <article>
+        <img src="imagen.jpeg" alt="" width="100px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste vero magni. Necessitatibus hic delectus quos nesciunt consectetur illum a natus itaque provident. Aliquam, aspernatur repellat? Maiores numquam fugiat adipisci.</p>
+    </article>
+    <p>
+        Segundo párrafo <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ut iste accusantium soluta, vitae a temporibus laudantium porro laboriosam, fuga eaque laborum consectetur maiores dolor iure expedita, sint optio veniam!
+    </p>
+
+    <h1>Segundo Titulo grande</h1>
+    <div>
+        <p>
+            Tercer párrafo pero dentro de un div <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam at, excepturi eligendi culpa neque modi veritatis repellendus possimus corrupti quibusdam qui molestiae laborum! Voluptatum hic dolore enim perferendis deleniti fuga!
+        </p>
+    </div>
+    <span class="mi-clase">
+        Elemento span
+    </span>
+    <form action="2-2selectores.html" method="post">
+        <div>
+            <label for="">Numero:</label>
+            <input type="number" value="30">
+        </div>
+        <div>
+            <label for="">Texto:</label>
+            <input type="text" placeholder="Elemento input tipo text">
+        </div>
+        <div>
+            <input type="submit" value="Botón">
+        </div>
+    </form>
+    <ul>
+        <li>Punto uno</li>
+        <li class="especial">Punto dos</li>
+        <li>Punto tres</li>
+    </ul>
+</body>
+</html>

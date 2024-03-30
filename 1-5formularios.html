@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <p>Un formulario es una sección de una página web que permite la interacción del usuario. Contiene elementos básicos como inputs, casillas de verificación, botones, y cajas de opciones</p>
+    
+    <form action="">
+        <fieldset>
+            <legend>Formulario</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" value="Yuriria">
+            <br>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" value="38">
+            <div>
+                <label for="pass">Contraseña:</label>
+                <input type="password" name="pass" id="pass">
+            </div>
+            <div>
+                <label for="">Servicios</label>
+                <input type="checkbox" name="" id=""> Internet
+                <input type="checkbox" name="" id=""> Luz
+                <input type="checkbox" name="" id=""> Agua
+            </div>
+            <div>
+                <label for="acepta">Acepta</label>
+                <input type="radio" name="acepta" id="si" value="si"> Si
+                <input type="radio" name="acepta" id="no" value="no"> No
+            </div>
+            <div>
+                <label for="">Género:</label>
+                <select name="" id="">
+                    <option value="">Femenino</option>
+                    <option value="">Masculino</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Mensaje:</label> <br>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

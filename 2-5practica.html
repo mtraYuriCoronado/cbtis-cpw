@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: aliceblue;
+        }
+
+        section {
+            border: 2px dashed steelblue;
+            width: 500px;
+            height: 800px;
+            margin: 5em auto;
+            padding: 2em;
+        }
+
+        div{
+            background-color: #87ceebaa;
+            color: #444;
+            font-size: 3em;
+            font-weight: bold;
+            padding: .5em;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .uno{
+            background-color: #ff6f6faa;
+            position: relative;
+            bottom: 100px;
+            /* top: 100px; */
+            /* right: 50px; */
+            /* left: 20px; */
+            /* z-index: -1; */
+        }
+        .dos{
+            background-color: #fffd6faa;
+            position: absolute;
+            /* bottom: 100px; */
+            top: 0;
+            /* right: 50px; */
+            left: 0;
+            /* z-index: -1; */
+        }
+        .tres{
+            background-color: #74ff6faa;
+            position: fixed;
+            bottom: 10px;
+            /* top: 0; */
+            right: 10px;
+            /* left: 0; */
+            /* z-index: -1; */
+        }
+        .cuatro{
+            background-color: #6fadffaa;
+            position: sticky;
+            /* width: 50px; */
+            bottom: 0px;
+            top: 0px;
+            right: 0px;
+            /* left: 0; */
+            /* z-index: -1; */
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui laborum asperiores commodi eaque a impedit officiis nostrum nam beatae ratione saepe obcaecati, aliquid, odio optio iure ipsam id repudiandae?</p>
+        <div class="uno">1</div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam accusamus quisquam inventore alias molestiae sit, molestias deserunt repellat cumque consequuntur facilis eligendi velit rem sequi commodi aliquid tenetur harum. Delectus?</p>
+        <div class="dos">2</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci necessitatibus quidem sit velit, deleniti ab itaque recusandae qui in aspernatur delectus placeat error rem, labore blanditiis tempore. Aspernatur, atque quaerat?</p>
+        <div class="tres">3</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci necessitatibus quidem sit velit, deleniti ab itaque recusandae qui in aspernatur delectus placeat error rem, labore blanditiis tempore. Aspernatur, atque quaerat?</p>
+        <div class="cuatro">4</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci necessitatibus quidem sit velit, deleniti ab itaque recusandae qui in aspernatur delectus placeat error rem, labore blanditiis tempore. Aspernatur, atque quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, magni at sed aspernatur tenetur sequi! Incidunt corrupti sequi, aliquam eaque ducimus deleniti voluptas, voluptates suscipit quasi porro provident nihil nostrum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolor voluptates est voluptatum nemo saepe expedita soluta quos alias? Quis repudiandae doloremque ducimus sunt facere optio, eaque omnis iste recusandae. </p>
+    </section>
+</body>
+
+</html>

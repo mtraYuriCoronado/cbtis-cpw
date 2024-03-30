@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y formato de texto</title>
+    <style>
+        /*Los nombres de los tipos de letra que están constituidos por más de una palabra (como Trebuchet MS ) han de ponerse entre comillas*/
+        body{
+            font-family: "Trebuchet MS", Verdana, sans-serif;
+        }
+        h1 {
+            font-size: 5rem;
+        }
+        p {
+            font-size: 16px;
+        }
+        ol{
+            /* decimal, decimal-leading-zero, lower-roman, upper-roman, */
+            /* lower-greek, lower-latin, */
+            /* upper-latin, armenian, georgian, lower-alpha, upper-alpha */ 
+            list-style-type: decimal-leading-zero;
+        }
+        ul{
+            /*disc, circle, square, none*/
+            list-style-type: square;
+            list-style-position: inside; /*inside, outisde*/
+        }
+        a{
+            outline: thick pink;
+            text-decoration: none;
+        }
+        a:link {
+            color: #08ee00;
+        }
+
+        a:visited {
+            color: #ff79f4;
+        }
+
+        a:focus {            
+            background: #44ffd0;
+        }
+
+        a:hover {
+            background: #fff34f;
+        }
+
+        a:active {
+            background: #ff1f8f;
+            color: #ffc4d6;
+        }
+        .luffy-list{
+            list-style-image: url("jolly.png");
+        }
+        .enfasis {
+            font-style: italic; /*oblique*/
+            color: violet;
+        }
+        .bold {
+            font-weight: bold; /*bold, lighter, bolder*/
+            color: blueviolet;
+        }
+        .uppercase{
+            text-transform: uppercase; /*lowercase, capitalize, full-width, none*/
+            color: deeppink;
+        }
+        .underline {
+            text-decoration: underline; /*overline, none, line-through*/
+            color: greenyellow;
+        }
+        .error-message {
+            color: red; /*Nombre del color*/
+        } 
+        .success-message{
+            color:rgb(4, 182, 78); /* Codigo rgb */
+        }
+        .highlight {
+            color: #fbff00; /* Código hexadecimal */
+            background-color: black;
+        }
+        .spaced-text {
+            letter-spacing: 2px;
+        }
+        .paragraph {
+            line-height: 1.5; /* Espacio entre líneas es 1.5 veces el tamaño del texto */
+        }
+        .centered-text {
+            text-align: center; /* left, right, center, justify*/
+        }
+        .justify-text{
+            text-align: justify;
+        }
+        .shadow-text{
+            text-shadow: 5px 5px 2px plum;
+        }
+        .cursor{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="shadow-text">Titulo grande</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, in, voluptas earum eius dolore consectetur atque laborum nam nisi iure dolorum <span class="enfasis">texto enfatizado</span> velit esse porro officiis accusantium fugit quae ipsa delectus.</p>
+    <p>
+    Lorem ipsum <span class="bold">texto en negritas</span> dolor sit amet consectetur adipisicing elit. Nostrum voluptatum illo assumenda, veritatis autem architecto? Veritatis ducimus voluptatum et at dolor beatae maiores veniam exercitationem, repellendus consequatur laboriosam quos reprehenderit!
+    </p>
+
+    <h3 class="uppercase">Titulo mediano</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam, eveniet, veritatis <i class="underline">texto subrayado</i> ad totam commodi modi molestiae illum amet doloribus corporis perspiciatis dicta aliquid deleniti, sint laudantium natus nostrum in?</p>
+    <p class="spaced-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam alias inventore consectetur non qui provident numquam quod laudantium laboriosam rerum libero cupiditate autem hic distinctio, accusantium voluptates, eveniet tempora aliquam!
+        Debitis molestiae optio recusandae, provident quae consequatur temporibus iste voluptatibus nobis, quis sint earum cupiditate dolorum rem, vel quisquam quibusdam asperiores adipisci eveniet pariatur. Debitis porro veritatis iusto fugiat adipisci!
+    </p>
+    <p class="paragraph bold cursor">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nostrum corrupti unde nihil laboriosam iusto amet dolore architecto officia praesentium voluptatem odio maiores, non iure blanditiis iste minima aperiam vel!
+    </p>
+
+    <h4 class="centered-text uppercase">Contenedores en linea</h4>
+
+    <span class="error-message">¡Error!</span>
+    <span class="success-message" >¡Correcto!</span>
+    <span class="highlight">Resaltado</span>
+
+    <h4>Mas parrafos</h4>
+
+    <p class="justify-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ducimus aspernatur nam beatae dignissimos aperiam laboriosam earum ipsam, suscipit quo maxime accusantium consequatur ullam optio, sed fugit aliquam. Veniam, incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet obcaecati non officia optio, ut architecto similique ducimus soluta quo dolorem error a cum quisquam velit fugit repellat officiis quod quibusdam?
+    </p>
+
+    <h4>Listas</h4>
+    <ul>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+    </ul>
+
+    <h4>One piece characters</h4>
+    <ul class="luffy-list">
+        <li>zoro</li>
+        <li>nami</li>
+        <li>ussop</li>
+        <li>sanji</li>
+        <li>vivi</li>
+        <li>robin</li>
+        <li>franky</li>
+        <li>brook</li>
+        <li>jimbey</li>
+    </ul>
+
+    <h4>ENLACES</h4>
+    <a href="#">Enlace 1</a>
+    <a href="#">Enlace 2</a>
+</body>
+</html>

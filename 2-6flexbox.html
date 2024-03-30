@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox en CSS</title>
+    <style>
+        .container{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(208, 255, 208);
+            display: flex; 
+            /* flex-direction: row;  */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: nowrap;   */
+            /* flex-wrap: wrap;   */
+            /* flex-wrap: wrap-reverse;           */
+            /* flex-flow: row wrap; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* align-items: center; */
+            /* align-items: end; */
+            /* align-items: start; */
+            /* align-items: stretch; */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+            /* align-content: stretch; */
+        }
+        .item{
+            /* width: 25px; */
+            /* height: 40px; */
+            /* margin: 5px; */
+            background-color: chartreuse;
+            /* border: 1px solid yellow; */
+        }
+        .naranja{
+            background-color: rgb(255, 187, 62);
+            flex-grow: 5;
+            flex-shrink: 0;
+            flex-basis: 30px;
+            /* flex: auto; */
+        }
+        .rojo{
+            background-color: rgb(255, 123, 123);
+            flex-grow: 2;
+            flex-shrink: 1;
+            flex-basis: 15px;
+
+        }
+        .azul{
+            background-color: rgb(174, 194, 250);
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 40px;
+        }
+        .rosa{
+            background-color: rgb(255, 148, 201);
+            /* order: 1; */
+            /* order: 4; */
+            /* order: 3; */
+            /* order: 1; */
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="item naranja">1</div>
+        <div class="item rojo">2</div>
+        <div class="item azul">3</div>
+        <!-- <div class="item rosa">4</div> -->
+        <!-- <div class="item ">5</div> -->
+    </section>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Z-Index en CSS</title>}
+    <style>
+        html{
+            font-family: sans-serif;
+        }
+        div{
+            border: 1px dashed #575757;
+            font-weight: bold;
+            opacity: .6;
+            padding: 2em;
+            display: inline-block;
+            position: absolute;
+        }
+        .container{
+            background-color: #eee;
+            border: 1px solid #ddd;
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            position: relative;
+        }
+        .box1{
+            background-color: rgb(255, 100, 100);
+            top: 70px;
+            left: 70px;
+            z-index: 3;
+        }
+        .box2{
+            background-color: rgb(255, 255, 100);
+            top: 150px;
+            left: 150px;
+            z-index: 2;
+        }
+        .box3{
+            background-color: rgb(100, 100, 255);
+            top: 50px;
+            left: 200px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Como funciona z-index en CSS</h1>
+    <p>La propiedad <strong>z-index</strong> permite ajustar el orden de los objetos en el eje z y solo tiene efecto sobre elementos posicionados.</p>
+
+    <section class="container">
+        <div class="box1">
+            <h2>caja 1</h2>
+            <code>
+                z-index: 3
+            </code>
+        </div>
+        <div class="box2">
+            <h2>caja 2</h2>
+            <code>
+                z-index: 2;
+            </code>
+        </div>
+        <div class="box3">
+            <h2>caja 3</h2>
+            <code>
+                z-index: 1;
+            </code>
+        </div>
+    </section>
+</body>
+</html>
